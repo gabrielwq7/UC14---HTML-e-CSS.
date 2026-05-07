@@ -1,0 +1,95 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #dbefff, #f5fbff);
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #355070;
+
+    overflow: hidden;
+}
+
+/* Container principal */
+.container{
+    width: 80%;
+    max-width: 700px;
+
+    text-align: center;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background-color: rgba(255,255,255,0.4);
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.4s ease;
+
+        transition:
+        transform 0.4s ease,
+        box-shadow 0.5s ease;
+        color: rgb(0, 136, 255);
+}
+
+/* Hover suave */
+.container:hover{
+    transform: scale(1.02);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* Título */
+h1{
+    font-size: 4rem;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 3px;
+}
+
+/* Texto */
+p{
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+    color: #4f6d8a;
+}
+
+/* Imagem */
+img{
+    width: 100%;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+/* Efeito suave */
+img:hover{
+    filter: brightness(1.05);
+
+    transform: scale(1.01);
+}
