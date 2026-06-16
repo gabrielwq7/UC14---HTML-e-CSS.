@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 250, 350);
+}
+
+button {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    animation: movimento 8s infinite;
+}
+
+@keyframes movimento {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: blue;
+    }
+
+    20% {
+        left: 200px;
+        top: 0;
+        background-color: red;
+    }
+
+    40% {
+        left: -200px;
+        top: 0;
+        background-color: green;
+    }
+
+    60% {
+        left: 0;
+        top: -150px;
+        background-color: orange;
+    }
+
+    80% {
+        left: 0;
+        top: 150px;
+        background-color: purple;
+    }
+
+    100% {
+        left: 150px;
+        top: 150px;
+        background-color: pink;
+    }
+}
