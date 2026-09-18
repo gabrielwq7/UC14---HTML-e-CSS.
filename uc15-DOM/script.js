@@ -1,11 +1,27 @@
-function mudartexto() {
-    document.getElementById
-    ("titulo").textContent = "voce clicou no botao";
 
+function mostrarNome() {
+    var nomeDigitado = document.getElementById("nome-pet").value;
+    var paragrafo = document.getElementById("mensagem");
+
+    paragrafo.textContent = "Parabéns! O seu mascote agora se chama " + nomeDigitado + "!";
 }
 
-function mudarcor() {
-    document.getElementById("mensagem").style.color =
-    "blue";
+
+function destacarMensagem() {
+    var paragrafo = document.getElementById("mensagem");
+
+    paragrafo.style.color = "green";
+    paragrafo.style.fontSize = "24px";
 }
 
+var energia = 10;
+
+function aumentar() {
+    energia = energia + 1;
+    document.getElementById("contador").textContent = energia;
+}
+
+function diminuir() {
+    energia = energia - 1;
+    document.getElementById("contador").textContent = energia;
+}
