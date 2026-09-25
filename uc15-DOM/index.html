@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Pet Virtual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <div class="container">
+    <h1 id="title">meu planejador de estudos</h1>
 
-   
-    <h1 id="titulo">Cuide do seu Pet</h1>
+    <h2>nova tarefa</h2>
 
-    <p>Digite o nome do seu mascote:</p>
-    <input type="text" id="nome-pet">
-    
-    <button onclick="mostrarNome()">Adotar Mascote</button>
-    <button onclick="destacarMensagem()">Destacar Nome</button>
+    <input type="text" id="tarefa" placeholder="Digite sua tarefa">
 
-    <p id="mensagem"></p>
+    <input type="text" id="materia" placeholder="Digite a matéria">
 
-    <hr>
+    <select id="prioridade">
+        <option value="">Selecione a prioridade</option>
+        <option value="alta">Alta</option>
+        <option value="media">Média</option>
+        <option value="baixa">Baixa</option>
+    </select>
 
+    <button onclick="adicionarTarefa()">
+        cadastrar Tarefa
+    </button>
 
-    <h2>Nível de Energia</h2>
-    <button onclick="diminuir()">-</button>
-    <span id="contador">10</span>
-    <button onclick="aumentar()">+</button>
+  <button onclick="limparTarefas()">
+        Limpar campos
+</button>
 
-    <script src="script.js"></script>
+<p id="mensagem"></p>
+
+ <div class="contadores">
+
+    <p id="contador"> tarefas cadastradas: 0</p>
+    <p id="contadorconcluidas"> tarefas concluídas: 0</p>
+ </div>
+
+  <button onclick="alternadormodo()">
+    modo de concentração
+  </button>
+
+  <h2>minhas tarefas</h2>
+
+  <div id="listatarefas"></div>
+
+ </div>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>

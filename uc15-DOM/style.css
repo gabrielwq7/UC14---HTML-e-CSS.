@@ -1,0 +1,412 @@
+/* ==============================
+   ESTILO GERAL
+   ============================== */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #071111, #0b1a1a);
+    margin: 0;
+    padding: 30px;
+    color: #d9ffff;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+
+/* ==============================
+   CONTAINER PRINCIPAL
+   ============================== */
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #0b0f0f;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.12);
+    border: 1px solid #164d4d;
+}
+
+
+/* ==============================
+   TÍTULOS
+   ============================== */
+
+h1,
+h2 {
+    text-align: center;
+    color: #00e5e5;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 229, 229, 0.25);
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+
+/* ==============================
+   CAMPOS DE INPUT
+   ============================== */
+
+input,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    border: 1px solid #245f5f;
+    border-radius: 10px;
+
+    background-color: #101818;
+    color: #d9ffff;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #719090;
+}
+
+input:focus,
+select:focus {
+    border-color: #00e5e5;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 229, 229, 0.12),
+        0 0 12px rgba(0, 229, 229, 0.08);
+
+    background-color: #121f1f;
+}
+
+
+/* ==============================
+   BOTÕES
+   ============================== */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #00b8b8,
+        #008b8b
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0, 229, 229, 0.18);
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(
+        135deg,
+        #00e5e5,
+        #00a6a6
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 14px rgba(0, 229, 229, 0.25),
+        0 0 15px rgba(0, 229, 229, 0.10);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* ==============================
+   MENSAGEM
+   ============================== */
+
+#mensagem {
+    font-weight: bold;
+    text-align: center;
+
+    margin-top: 18px;
+    padding: 12px;
+
+    border-radius: 10px;
+
+    color: #00e5e5;
+    background-color: #102222;
+
+    border: 1px solid #174f4f;
+}
+
+
+/* ==============================
+   CONTADORES
+   ============================== */
+
+.contadores {
+    text-align: center;
+
+    margin: 25px 0;
+    padding: 15px;
+
+    font-weight: bold;
+
+    color: #00d9d9;
+
+    background-color: #102222;
+
+    border-radius: 12px;
+
+    border: 1px solid #185555;
+
+    box-shadow:
+        0 4px 12px rgba(0, 229, 229, 0.06);
+}
+
+
+/* ==============================
+   TAREFAS
+   ============================== */
+
+.tarefa {
+    background: linear-gradient(
+        135deg,
+        #101616,
+        #142020
+    );
+
+    padding: 18px;
+    margin-top: 18px;
+
+    border-radius: 12px;
+
+    border-left: 6px solid #00d9d9;
+
+    box-shadow:
+        0 4px 12px rgba(0, 229, 229, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.tarefa:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 16px rgba(0, 229, 229, 0.14),
+        0 0 12px rgba(0, 229, 229, 0.05);
+}
+
+.tarefa h3 {
+    color: #00e5e5;
+    margin-top: 0;
+
+    text-shadow:
+        0 0 8px rgba(0, 229, 229, 0.15);
+}
+
+
+/* ==============================
+   BOTÃO DA TAREFA
+   ============================== */
+
+.tarefa button {
+    background: linear-gradient(
+        135deg,
+        #00b8b8,
+        #008f8f
+    );
+
+    box-shadow: none;
+}
+
+.tarefa button:hover {
+    background: linear-gradient(
+        135deg,
+        #00e5e5,
+        #008b8b
+    );
+}
+
+
+/* ==============================
+   TAREFA CONCLUÍDA
+   ============================== */
+
+.concluida {
+    opacity: 0.7;
+
+    border-left-color: #4caf50;
+
+    background: #111a15;
+}
+
+.concluida h3 {
+    text-decoration: line-through;
+    color: #777777;
+}
+
+
+/* ==============================
+   MODO CONCENTRAÇÃO
+   ============================== */
+
+.modo-concentracao {
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #061111
+    );
+
+    color: #d9ffff;
+}
+
+.modo-concentracao .container {
+    background-color: #090d0d;
+
+    border: 1px solid #164b4b;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Títulos no modo concentração */
+
+.modo-concentracao h1,
+.modo-concentracao h2 {
+    color: #00e5e5;
+
+    text-shadow:
+        0 0 10px rgba(0, 229, 229, 0.2);
+}
+
+
+/* Inputs no modo concentração */
+
+.modo-concentracao input,
+.modo-concentracao select {
+    background-color: #101a1a;
+
+    color: #ffffff;
+
+    border: 1px solid #256666;
+}
+
+.modo-concentracao input::placeholder {
+    color: #78aaaa;
+}
+
+.modo-concentracao input:focus,
+.modo-concentracao select:focus {
+    border-color: #00e5e5;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 229, 229, 0.12);
+}
+
+
+/* Tarefas no modo concentração */
+
+.modo-concentracao .tarefa {
+    background: #101a1a;
+
+    border-left-color: #00e5e5;
+
+    color: #d9ffff;
+}
+
+.modo-concentracao .tarefa h3 {
+    color: #00e5e5;
+}
+
+
+/* Contadores no modo concentração */
+
+.modo-concentracao .contadores {
+    background-color: #101a1a;
+
+    color: #00e5e5;
+
+    border-color: #256666;
+}
+
+
+/* Mensagem no modo concentração */
+
+.modo-concentracao #mensagem {
+    background-color: #101a1a;
+
+    color: #00e5e5;
+
+    border-color: #256666;
+}
+
+
+/* ==============================
+   SCROLLBAR
+   ============================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050707;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #006f6f;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00a6a6;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 11px;
+    }
+}
