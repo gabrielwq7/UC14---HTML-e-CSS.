@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prêmio Lumina de Cinema</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-trophy gold-icon"></i>
+            <span>LUMINA</span> AWARDS
+        </div>
+        <nav class="nav">
+            <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="#categorias" class="nav-link"><i class="fa-solid fa-list-check"></i> Categorias</a>
+            <a href="#voto" class="nav-link"><i class="fa-solid fa-check-to-slot"></i> Votação</a>
+            <a href="#vencedores" class="nav-link"><i class="fa-solid fa-crown"></i> Vencedores</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Edição Anual 2026</span>
+            <h1>O Maior Espetáculo da Sétima Arte</h1>
+            <p>Celebrando a excelência no cinema com as histórias, direções e atuações que marcaram o ano.</p>
+            <div class="hero-buttons">
+                <a href="#voto" class="btn btn-primary"><i class="fa-solid fa-vote-yea"></i> Votar Agora</a>
+                <a href="#categorias" class="btn btn-secondary"><i class="fa-solid fa-film"></i> Ver Indicados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias & Indicados -->
+    <section id="categorias" class="section">
+        <div class="container">
+            <h2 class="section-title">Categorias & Indicados</h2>
+            <div class="gold-divider"></div>
+            
+            <div class="category-tabs" id="categoryTabs">
+                <button class="tab-btn active" data-cat="filme">Melhor Filme</button>
+                <button class="tab-btn" data-cat="direcao">Melhor Direção</button>
+                <button class="tab-btn" data-cat="ator">Melhor Ator</button>
+                <button class="tab-btn" data-cat="atriz">Melhor Atriz</button>
+            </div>
+
+            <div class="nominees-grid" id="nomineesContainer">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Área de Votação Interativa -->
+    <section id="voto" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Votação Oficial do Público</h2>
+            <p class="section-subtitle">Escolha os seus favoritos nas 4 principais categorias e ajude a eleger os vencedores!</p>
+            <div class="gold-divider"></div>
+
+            <div class="voting-container" id="votingContainer">
+                <!-- Seções de votação por categoria inseridas via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Revelação dos Vencedores -->
+    <section id="vencedores" class="section">
+        <div class="container">
+            <h2 class="section-title">Galeria de Vencedores</h2>
+            <p class="section-subtitle">Abra os envelopes dourados para revelar quem levou a estatueta Lumina!</p>
+            <div class="gold-divider"></div>
+
+            <div class="winners-grid" id="winnersContainer">
+                <!-- Envelopes inseridos dinamicamente via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-trophy gold-icon"></i> PRÊMIO LUMINA DE CINEMA
+            </div>
+            <p>© 2026 Prêmio Lumina de Cinema. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
