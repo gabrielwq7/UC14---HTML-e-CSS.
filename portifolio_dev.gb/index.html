@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Gabriel Araújo, estudante do SENAC MedTec.">
+  <title>Meu formulario dev | Gabriel Araújo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#principal"></a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="logo" href="#inicio" aria-label="Página inicial">gb_site<span>.</span></a>
+
+      <button class="menu-botao" id="menu-botao"
+        aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#diario">Minha evolução</a>
+        <a href="#contato">Contato</a>
+        <button id="tema-botao" class="tema-botao"
+          type="button" aria-label="Ativar tema claro">☼</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal">
+    <section class="hero container" id="inicio">
+      <div>
+        <p class="etiqueta">PORTFÓLIO • SENAC MEDTEC</p>
+        <p id="saudacao" class="saudacao">Olá, seja bem-vindo!</p>
+        <h1>Meu portifolio <span>DEV.</span></h1>
+        <p class="hero-descricao">
+          Meu nome é Gabriel Araújo. Sou estudante do SENAC MedTec
+          e estou desenvolvendo minhas habilidades em tecnologia,
+          programação e criação de projetos digitais.
+        </p>
+
+        <div class="hero-botoes">
+          <a href="#projetos" class="botao botao-principal">Ver projetos ↗</a>
+          <a href="#sobre" class="botao botao-secundario">Conhecer mais</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-card">
+          <strong>&lt;/&gt;</strong>
+          <div class="linha"></div>
+          <div class="linha curta"></div>
+          <div class="linha media"></div>
+          <p>transformando ideias em projetos<span>.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao container" id="sobre">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">01 / SOBRE MIM</p>
+        <h2>Um pouco sobre <span>mim.</span></h2>
+        <p class="subtitulo">Conheça minha trajetória, meus interesses e meus objetivos.</p>
+      </div>
+
+      <div class="sobre-grid">
+        <div>
+          <img src="WhatsApp Image 2026-10-27 at 22.30.21.jpeg" alt="Foto de Gabriel Araújo" class="foto-perfil">
+          <p class="foto-legenda">Gabriel Araújo • Desenvolvedor em formação</p>
+        </div>
+
+        <div class="sobre-texto">
+          <h3>Aprendendo hoje para criar o amanhã.</h3>
+          <p>
+            Sou estudante do SENAC MedTec e tenho interesse pela área de tecnologia.
+            Este portfólio apresenta meus trabalhos e registra minha evolução durante
+            a formação.
+          </p>
+          <p>
+            Cada projeto é uma oportunidade de aprender, resolver problemas
+            e transformar ideias em experiências digitais.
+          </p>
+
+          <h4>Conhecimentos em desenvolvimento</h4>
+          <div class="habilidades">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="informacoes-extra">
+        <article class="info-item">
+          <span class="numero">01</span>
+          <div>
+            <h3>Formação</h3>
+            <p>Estudante do SENAC MedTec, desenvolvendo conhecimentos em tecnologia.</p>
+          </div>
+        </article>
+        <article class="info-item">
+          <span class="numero">02</span>
+          <div>
+            <h3>Objetivo</h3>
+            <p>Aprender novas tecnologias e criar projetos funcionais e acessíveis.</p>
+          </div>
+        </article>
+        <article class="info-item">
+          <span class="numero">03</span>
+          <div>
+            <h3>Aprendizado</h3>
+            <p>Praticar programação, melhorar minhas habilidades e registrar minha evolução.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-projetos" id="projetos">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <p class="etiqueta">02 / PORTFÓLIO</p>
+          <h2>Projetos em <span>destaque.</span></h2>
+          <p class="subtitulo">Trabalhos que fazem parte da minha jornada.</p>
+        </div>
+
+        <div class="projetos-grid">
+          <article class="projeto-card">
+            <a class="projeto-preview restaurante"
+              href="https://github.com/gabrielwq7/UC14---HTML-e-CSS./tree/main/restaurante_delivery_T.I"
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Abrir Restaurante Delivery no GitHub">
+              <div class="preview-topo"><strong>delivery<span>.</span></strong><span>☰</span></div>
+              <div class="preview-conteudo">
+                <small>PEÇA ONLINE</small>
+                <h3>Seu pedido,<br>do seu jeito.</h3>
+                <span class="preview-botao">FAÇA SEU PEDIDO ↗</span>
+              </div>
+              <div class="circulo"></div>
+            </a>
+
+            <div class="projeto-informacoes">
+              <div class="projeto-titulo"><h3>Restaurante Delivery</h3><span></span></div>
+              <p>Projeto de site para restaurante, com foco na apresentação de uma experiência de delivery.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>Web design</span></div>
+              <a class="projeto-link"
+                href="https://github.com/gabrielwq7/UC14---HTML-e-CSS./tree/main/restaurante_delivery_T.I"
+                target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+            </div>
+          </article>
+
+          <article class="projeto-card">
+            <a class="projeto-preview bytebrasil"
+              href="https://www.figma.com/proto/kZWazxBTW1twJUicd65E7g/ByteBrasil---banner?node-id=1-7&starting-point-node-id=1%3A7&scaling=scale-down-width&content-scaling=fixed"
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Abrir protótipo ByteBrasil no Figma">
+              <strong class="byte-logo">BYTE<span>BRASIL</span></strong>
+              <div class="byte-linha"></div>
+              <p>TECNOLOGIA. JOGOS. INOVAÇÃO.</p>
+              <small>EXPLORAR ↗</small>
+            </a>
+
+            <div class="projeto-informacoes">
+              <div class="projeto-titulo"><h3>ByteBrasil</h3><span></span></div>
+              <p>Proposta visual para um site de hardware e jogos, com identidade moderna e visual tecnológico.</p>
+              <div class="tags"><span>Figma</span><span>UI design</span><span>Identidade visual</span></div>
+              <a class="projeto-link"
+                href="https://www.figma.com/proto/kZWazxBTW1twJUicd65E7g/ByteBrasil---banner?node-id=1-7&starting-point-node-id=1%3A7&scaling=scale-down-width&content-scaling=fixed"
+                target="_blank" rel="noopener noreferrer">Ver protótipo ↗</a>
+            </div>
+          </article>
+
+          <!-- TERCEIRO PROJETO: TABELA PERIÓDICA ADAPTATIVA & HIPERFOCOS -->
+          <article class="projeto-card">
+            <div class="projeto-preview bytebrasil" aria-label="Prévia da Tabela Periódica Adaptativa">
+              <strong class="byte-logo">TABELA<span>PERIÓDICA</span></strong>
+              <div class="byte-linha"></div>
+              <p>QUÍMICA. HIPERFOCOS. ACESSIBILIDADE.</p>
+              <small>PROJETO EDUCACIONAL</small>
+            </div>
+
+            <div class="projeto-informacoes">
+              <div class="projeto-titulo"><h3>Tabela Periódica Adaptativa &amp; Hiperfocos</h3><span></span></div>
+              <p>Projeto educacional que propõe explorar a química por meio dos hiperfocos e interesses pessoais, com foco em uma experiência visual adaptativa e acessível.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              
+               <a class="projeto-link"
+                href="https://github.com/gabrielwq7/trabalho-de-quimica/tree/main/aula.script"
+                target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>
+            </div>
+          </article>
+        </div>
+        <p class="observacao">Projetos apresentados como parte do meu processo de aprendizado.</p>
+      </div>
+    </section>
+
+    <section class="secao container" id="diario">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">03 / MINHA EVOLUÇÃO</p>
+        <h2>Diário de <span>bordo.</span></h2>
+        <p class="subtitulo">Um registro dos conhecimentos que venho desenvolvendo.</p>
+      </div>
+
+      <div class="diario-grid">
+        <article class="diario-item">
+          <span class="ponto"></span>
+          <div><h3>Estruturação com HTML</h3><p>Estrutura semântica, organização de conteúdo e acessibilidade em páginas web.</p></div>
+        </article>
+        <article class="diario-item">
+          <span class="ponto"></span>
+          <div><h3>Estilização com CSS</h3><p>Cores, tipografia, Flexbox, Grid e adaptação para diferentes tamanhos de tela.</p></div>
+        </article>
+        <article class="diario-item">
+          <span class="ponto"></span>
+          <div><h3>Interatividade com JavaScript</h3><p>Eventos, validação de formulários e manipulação dos elementos da página.</p></div>
+        </article>
+        <article class="diario-item">
+          <span class="ponto"></span>
+          <div><h3>Design e prototipagem</h3><p>Exploração de interfaces, organização visual e criação de protótipos digitais.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-contato" id="contato">
+      <div class="container contato-grid">
+        <div class="contato-intro">
+          <p class="etiqueta">04 / CONTATO</p>
+          <h2>Formulário de Contato</h2>
+          <p>Tem alguma ideia, sugestão ou comentário sobre meus projetos? Preencha o formulário.</p>
+          <p class="contato-nota">Um espaço para trocar ideias e compartilhar experiências.</p>
+        </div>
+
+        <form class="formulario" id="formulario" novalidate>
+          <div class="campo">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name"
+              placeholder="identificação!" required aria-describedby="erro-nome">
+            <small class="erro" id="erro-nome"></small>
+          </div>
+
+          <div class="campo">
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email"
+              placeholder="email de contato!" required aria-describedby="erro-email">
+            <small class="erro" id="erro-email"></small>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"
+              placeholder="Escreva sua mensagem (mínimo de 20 caracteres)"
+              required aria-describedby="erro-mensagem"></textarea>
+            <small class="erro" id="erro-mensagem"></small>
+          </div>
+
+          <div class="consentimento">
+            <input type="checkbox" id="consentimento" name="consentimento" required>
+            <label for="consentimento">Confirmo que revisei as informações antes de enviar.</label>
+          </div>
+
+          <small class="erro" id="erro-consentimento"></small>
+
+          <button class="botao botao-principal botao-enviar" type="submit">Validar formulário ↗</button>
+          <p class="sucesso" id="mensagem-sucesso" role="status" aria-live="polite" tabindex="-1"></p>
+          <p class="nota-formulario">Formulário demonstrativo: não envia e-mails nem armazena dados.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">gb_site<span>.</span></a>
+      <p>Desenvolvido por Gabriel Araújo • SENAC MedTec</p>
+      <p>© <span id="ano-atual"></span> com direitos autorais!</p>
+    </div>
+  </footer>
+</body>
+</html>
